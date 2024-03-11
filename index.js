@@ -12,11 +12,7 @@ const port = process.env.PORT || 5000;
 // app.use(bodyParser.urlencoded({ extended: false })); // Remove 
 
 const pool  = mysql.createPool({
-    connectionLimit : 10,
-    host            : 'localhost',
-    user            : 'root',
-    password        : 'Kawal@02',
-    database        : 'gigl_assignment'
+    
 })
 app.use(express.urlencoded({extended: true})); // New
 // Parse application/json
